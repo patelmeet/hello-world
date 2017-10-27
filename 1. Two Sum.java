@@ -12,7 +12,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 */
 
-public class Solution {
+public class  Solution {
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         int result[] = new int[2];
