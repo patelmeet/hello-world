@@ -25,14 +25,15 @@ Return 6.
  */
 public class Solution {
     int max = Integer.MIN_VALUE;
+       
     public int maxPathSum(TreeNode root) {
         maxPathSumUtil(root);
         return max;
     }
     
     public int maxPathSumUtil(TreeNode node){
-        if(node == null)
-            return 0;
+        if(node == null){
+            return 0;}
         int l = maxPathSumUtil(node.left);
         int r = maxPathSumUtil(node.right);
         int retval = node.val+l > node.val+r ? node.val+l : node.val+r;
