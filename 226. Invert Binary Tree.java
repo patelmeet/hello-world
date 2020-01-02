@@ -35,8 +35,8 @@ public class Solution {
     }
     
     public void invertTreeUtil(TreeNode node){
-        if(node == null)
-            return;
+        if(node == null){
+            return;}
         TreeNode temp = node.left;
         node.left = node.right;
         node.right = temp;
